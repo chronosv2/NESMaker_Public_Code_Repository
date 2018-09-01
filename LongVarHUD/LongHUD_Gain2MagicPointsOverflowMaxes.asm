@@ -5,14 +5,18 @@
 
 	LDA myMP ;This is a User Variable so we can track our MP.
 	CLC
-	ADC #$01
+	ADC #$02
 
 	;;;you may want to test against a MAX HEALTH.
 	;;; this could be a static number in which case you could just check against that number
 	;;; or it could be a variable you set up which may change as you go through the game.
 	CMP #$11 ;Compare to 17. If we have 16 MP and +1, 17 is too high.
-	BCS mpFull ;Jump over the code messing with myMP so we don't overflow.
+	BCC addMP ;Jump over the code messing with myMP so we don't overflow.
+	LDA #$10
+	STA myMP
+	JMP MagicUpdateHud
 	
+addMP:
 	TXA
 	STA tempx
 
@@ -27,12 +31,7 @@ MagicUpdateHud:
 	LongBar myMagic,myMagicHi,HUD_myMagic,HUD_myMagicHi
 	
 	LDX tempx
-	JMP skipGettingMagic2
-
-mpFull:
-	LDA #$10
-	STA myMP
-	JMP MagicUpdateHud
+	JMP skipGettingMagicB
 	
-skipGettingMagic2:
+skipGettingMagicB:
 	PlaySound #SFX_INCREASE_HEALTH
