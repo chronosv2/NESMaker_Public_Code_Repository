@@ -31,10 +31,12 @@ LDA myWater,x  ;;Load Tens Digit
 BNE SubtractWater  ;;If not 0, we have more than 000 water.
 DEX			;;Checking Tens (myWater+0 (or just myWater)) -- Decrease x so x is 0
 LDA myWater,x  ;;Load Ones Digit
+;CMP #$01	;Uncomment this to make the timer time-up if it tries to tick at 001. (i.e. if the timer ticking to 0 kills the player)
 BNE SubtractWater  ;;If not 0, we have more than 000 water.
 JMP WaterHurtPlayer:
 
 SubtractWater:
+;;Subtract from the timer
 	SubtractValue #$03, myWater, #$01, #$00	;;Subtract 1 from the Ones digit
 	;;Usual HUD Update code
 	LDA #$03 ;; amount of score places?
@@ -45,6 +47,10 @@ SubtractWater:
 	JMP SkipWaterCheck	;;We don't need to hurt the player so jump to the end.
 	
 ;;No water. We get to hurt the player!
+
+;;This block of code is used when the timer tries to tick when it's at zero!
+;;If you want to outright kill the player when timer hits 0 (you uncommented the CMP above)
+;;you might want to set myWater to 0 so the timer shows 0 while the death animation is playing.
 	WaterHurtPlayer:
 	LDX player1_object		;Load the Player Object ID
 	LDA Object_status,x		;;We're going to set the player to flicker
@@ -73,6 +79,7 @@ SubtractWater:
 	LongBar myHealth,myHealthHi,HUD_myHealth,HUD_myHealthHi
 	
 	PlaySound #sfx_ouch
+;;End of "Timer Trigger" block here!
 ++
 SkipWaterCheck:
 RTS	;;Return from Subroutine
