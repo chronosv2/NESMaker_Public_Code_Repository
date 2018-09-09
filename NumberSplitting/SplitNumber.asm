@@ -37,7 +37,6 @@ JMP TestNumbers
 Store1s:
     LDX #$00 ;We need the 1st number
     STA arg0,x ;Store the ones digit in the base number.
-JMP TestNumbers
 EndSplit:
 
 ENDM
