@@ -23,8 +23,6 @@ addMP:
 	LDA myMP
 	ADC #$02
 	STA myMP
-	;inc myMP
-	;LDA myMP
 
 MagicUpdateHud:
 	;Here's the Macro. LongBar [low-byte],[high-byte],[HUD_update_bit_1],[HUD_update_bit_2]
