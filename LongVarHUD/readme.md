@@ -10,22 +10,17 @@ Finally, you'll need to write *a little* code to make this work.
 # How To Use:
 First, we need to define a few scripts. Project Menu -> Project Settings, Script Settings Tab
 
-**Name:** Long Bar Macro
-
-**Define:** SCR_LONG_BARS
-
+**Name:** Long Bar Macro  
+**Define:** SCR_LONG_BARS  
 **Script:** [Wherever-you-unpack-the-ASM-files]\DrawLongBars.asm
 
-**Name:** Long HUD Support
-
-**Define:** SCR_LONGHUD
-
+**Name:** Long HUD Support  
+**Define:** SCR_LONGHUD  
 **Script:** [Wherever-you-unpack-the-ASM-files]\HudUpdate_LongHudSupport.asm
 
 We also need a User Variable (and you'll need more if you plan on doing more than player HP!)
 
-**Variable Name:** LongHudVar
-
+**Variable Name:** LongHudVar  
 **Default Value:** 0
 
 Now that that's done, we need to make our change to the HandleHudData.asm file in GameEngineData\Routines\System\

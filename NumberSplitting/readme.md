@@ -10,13 +10,13 @@ It works by taking any number the accumulator can hold (#$00 to #$FF), subtract 
 
 ## How To Use:
 First, we need to define a few scripts. Project Menu -> Project Settings, Script Settings Tab
-**Name:** Number Splitting
-**Define:** SCR_NUM_SPLIT
+**Name:** Number Splitting  
+**Define:** SCR_NUM_SPLIT  
 **Script:** [Wherever-you-unpack-the-ASM-files]\SplitNumber.asm
 
 If you want to use the Number Splitter code for displaying enemy HP:
 Change the following script to this:
-**Name:** Handle Monster Hurt
+**Name:** Handle Monster Hurt  
 **Script:** [Wherever-you-unpack-the-ASM-files]\Adventure_HandleHurtMonster.asm
 
 Now Monster HP will be displayed in a HUD Element if you name one **EnemyHealth**

@@ -8,12 +8,12 @@ I recommend unpacking these scripts to your own folder in the UserScripts folder
 ## How to Use
 ### Defines
 Change the following
-**Name:** Handle Game Timer
+**Name:** Handle Game Timer  
 **Script:** [Wherever-you-unpack-the-ASM-files]\HandleGameTimer.asm
 
 Define the following
-**Name:** Handle Tick
-**Define:** SCR_COUNTDOWN_TIMER
+**Name:** Handle Tick  
+**Define:** SCR_COUNTDOWN_TIMER  
 **Script:** [Wherever-you-unpack-the-ASM-files]\Timer_Tick.asm
 
 
