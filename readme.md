@@ -5,7 +5,7 @@ This repository contains all the code I've written for use with the NESMaker gam
 
 Included Code Snippets:
 ### LongVarHUD:
-Ever wanted a bar on screen longer than 8 tiles? This script allows you to combine two HUD Elements to make one longer element 9-16 tiles long.
+Ever wanted a bar on screen longer than 8 tiles? This script allows you to combine two HUD Elements to make one longer element 9-16 tiles long. **Note:** If you wnt to update a bar and a number in NESMaker's HUD in one pass that's supported already and you __do not need my code__ to do so!
 ### CountDownTimer:
 Used as the "Water" Gauge in my Desolate Desert Showcase ROM, this set of functions implements a counting down timer that, as of this code, hurts the player if the timer is at 000.
 ### NumberSplitting:
