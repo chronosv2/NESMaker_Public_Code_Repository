@@ -1,5 +1,6 @@
 # NESMaker Public Code Repository
 ## Code by Chronosv2
+## Repository uses NESMaker v4.0.11
 
 This repository contains all the code I've written for use with the NESMaker game making platform.
 
