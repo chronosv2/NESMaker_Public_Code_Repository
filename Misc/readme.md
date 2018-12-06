@@ -1,0 +1,1 @@
+These are miscelaneous scripts used in the Desolate Desert Code Showcase ROM.
