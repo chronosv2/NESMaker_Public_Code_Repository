@@ -1,6 +1,6 @@
 #Countdown Timer
 This set of scripts allows you to have a Countdown Timer. Note that it runs off of global timer ticks, so 1 timer unit is 256 ticks, or about 4.26 seconds.
-I'm not sure how to fix this yet.
+I know how to make this more customizable but I'll be doing it for version 4.1.0 with NESMaker's new Plugin system.
 
 I recommend unpacking these scripts to your own folder in the UserScripts folder.
 
