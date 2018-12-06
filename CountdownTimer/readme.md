@@ -3,7 +3,6 @@ This set of scripts allows you to have a Countdown Timer. Note that it runs off 
 I'm not sure how to fix this yet.
 
 I recommend unpacking these scripts to your own folder in the UserScripts folder.
-**_Do not overwrite the default Adventure Hurt Monster Script._**
 
 ## How to Use
 ### Defines
