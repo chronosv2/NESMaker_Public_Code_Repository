@@ -1,21 +1,19 @@
 #Countdown Timer
-This set of scripts allows you to have a Countdown Timer. Note that it runs off of global timer ticks, so 1 timer unit is 256 ticks, or about 4.26 seconds.
+This set of scripts allows you to have a Countdown Timer. Note that it runs off of global timer ticks, so 1 timer unit is 256 ticks, or about 4.26 seconds.  
 I know how to make this more customizable but I'll be doing it for version 4.1.0 with NESMaker's new Plugin system.
 
 I recommend unpacking these scripts to your own folder in the UserScripts folder.
 
 ## How to Use
 ### Defines
-Change the following
+Change the following  
 **Name:** Handle Game Timer  
 **Script:** [Wherever-you-unpack-the-ASM-files]\HandleGameTimer.asm
 
-Define the following
+Define the following  
 **Name:** Handle Tick  
 **Define:** SCR_COUNTDOWN_TIMER  
 **Script:** [Wherever-you-unpack-the-ASM-files]\Timer_Tick.asm
-
-
 
 If you wish to use the tile, change one of the Tile defines to point to the Refill Tile.
 To handle disabling the timer if you warp to the underworld, change Warp Tile define to WarpToScreen.
